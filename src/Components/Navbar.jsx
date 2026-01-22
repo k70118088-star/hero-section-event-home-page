@@ -10,7 +10,7 @@ const Navbar = () => {
         
         
         <div className="flex items-center gap-2">
-          <img className="w-10 h-10" src="public/assets/event.png" alt="logo" />
+          <img className="w-10 h-10" src="/assets/event.png" alt="logo" />
           <h1 className="font-bold text-3xl text-[#2c49fe]">
             Events<span className="text-[#01c8ff]">Free</span>
           </h1>
