@@ -72,8 +72,8 @@ const NavLinks = () => {
   return (
     <>
       <a className={baseStyle} href="#">HOME</a>
-      <a className={baseStyle} href="#">EVENT</a>
-      <a className={baseStyle} href="#">FEEDS</a>
+      <a className={baseStyle} href="#">EVENTS</a>
+      <a className={baseStyle} href="#">FEED</a>
       <a className={baseStyle} href="#">USER NAME</a>
     </>
   );
