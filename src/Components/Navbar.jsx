@@ -46,7 +46,7 @@ const Navbar = () => {
 
       <div
         className={`fixed top-0 right-0 h-full w-[75%] max-w-sm p-6
-        transform transition-transform duration-300 ease-in-out
+        transform transition-transform bg-linear-to-r from-slate-900 via-blue-900 to-blue-600 duration-300 ease-in-out
         ${isOpen ? "translate-x-0" : "translate-x-full"}`}
       >
         <div className="mt-16 flex flex-col  gap-6">
