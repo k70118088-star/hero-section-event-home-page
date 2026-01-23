@@ -12,7 +12,7 @@ const Second = () => {
         }}
       >
         <img
-          src="public/assets/Group17.png"
+          src="/assets/Group17.png"
           alt=""
           className="w-156 h-119.25"
         />
