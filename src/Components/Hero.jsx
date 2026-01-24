@@ -1,16 +1,13 @@
 import React from "react";
-import Navbar from "./Navbar";
 import Button from "./Button";
 import { Capicity, Date, Location } from "../../icons";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen bg-cover bg-center -mt-20">
       <div className="absolute inset-0 bg-[url(/assets/10878ab9e650c4ad78302034fdebefa96e166933.jpg)] bg-cover bg-center scale-x-[-1]" />
       <div className="absolute inset-0 bg-black/50" />
-        
-      <Navbar />
-    
+            
       <div className="relative max-w-330 mx-auto px-5 pt-24">
         <h1
           className="font-bold text-white leading-[120%]

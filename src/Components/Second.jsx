@@ -4,7 +4,10 @@ import { Help, Info, Sharing } from "../../icons";
 
 const Second = () => {
   return (
-    <div className="bg-white flex justify-center m-auto items-center gap-10 mt-35">
+    <div className="
+      bg-white flex justify-center m-auto items-center gap-10 mt-35
+      flex-col lg:flex-row px-5
+    ">
       <div
         onClick={() => {
           window.location.href =
@@ -14,59 +17,72 @@ const Second = () => {
         <img
           src="/assets/Group17.png"
           alt=""
-          className="w-156 h-119.25"
+          className="
+            w-156 h-119.25
+            max-w-full h-auto
+            sm:w-[420px] md:w-[520px] lg:w-156
+          "
         />
       </div>
-      <div className="items-center">
-        <div className="flex justify-end max-w-40 mb-6 ">
+
+      <div className="items-center text-center lg:text-left">
+        <div className="flex justify-center lg:justify-end max-w-40 mb-6">
           <svg
             width="189"
             height="8"
             viewBox="0 0 189 8"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
           >
             <rect x="1" width="188" height="8" fill="#01C8FF" />
             <rect width="166" height="8" fill="#2C49FE" />
           </svg>
         </div>
-        <h1 className="font-bold text-5xl leading-[100%] mb-4 ">
+
+        <h1 className="
+          font-bold  leading-[100%] mb-4 text-2xl
+          sm:text-3xl md:text-4xl lg:text-5xl
+        ">
           What make us special ?
         </h1>
-        <p className="font-normal text-[16px] leading-5.25 text-[#4d4d4d]">
+
+        <p className="
+          font-normal text-[16px] leading-5.25 text-[#4d4d4d]
+          text-sm sm:text-[15px] lg:text-[16px]
+        ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           efficitur urna in
-          <br /> dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo
-          et leo <br />
+          <br className="hidden sm:block" />
+          dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo
+          et leo
+          <br className="hidden sm:block" />
           congue lacinia vitae nec arcu. Nunc elit elit, malesuada id suscipit
           cursus,
         </p>
+
         <div className="flex items-center flex-col justify-center">
-          <div className="flex gap-10">
+          <div className="
+            flex gap-10
+            flex-col sm:flex-row
+          ">
             <Box
               image={<Sharing />}
               title={"Sharing"}
-              info={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in "
-              }
+              info="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in "
               margin={"mt-9"}
             />
             <Box
               image={<Info />}
               title={"Info"}
-              info={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in "
-              }
+              info="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in "
               margin={"mt-9"}
             />
           </div>
-          <div >
+
+          <div className="mt-6 sm:mt-0">
             <Box
               image={<Help />}
               title={"Help"}
-              info={
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in "
-              }
+              info="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in "
               margin={"mt-6"}
             />
           </div>
@@ -77,3 +93,4 @@ const Second = () => {
 };
 
 export default Second;
+
