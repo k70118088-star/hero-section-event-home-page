@@ -26,7 +26,7 @@ const Second = () => {
       </div>
 
       <div className="items-center text-center lg:text-left">
-        <div className="flex justify-center items-center m-auto lg:m-0 lg:justify-end max-w-40 mb-6">
+        <div className="flex justify-center items-center m-auto lg:m lg:justify-end max-w-40 mb-6">
           <svg
             width="189"
             height="8"
