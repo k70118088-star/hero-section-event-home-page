@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="relative max-w-330 mx-auto px-5 pt-24">
         <h1
           className="font-bold text-white leading-[120%]
-          text-3xl sm:text-4xl md:text-5xl lg:text-[64px]"
+          text-3xl sm:text-4xl md:text-5xl lg:text-[64px] mt-10"
         >
           Sed tortor in quisque morbi
           <br />
