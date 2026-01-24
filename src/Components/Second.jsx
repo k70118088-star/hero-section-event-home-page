@@ -18,9 +18,9 @@ const Second = () => {
           src="/assets/Group17.png"
           alt=""
           className="
-            w-156 h-119.25
-            max-w-full h-auto
-            sm:w-[420px] md:w-[520px] lg:w-156
+            w-156 h-auto h-119.25
+            max-w-full 
+            sm:w-105 md:w-130 lg:w-156
           "
         />
       </div>
