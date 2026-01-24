@@ -4,14 +4,14 @@ import { Capicity, Date, Location } from "../../icons";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen bg-cover bg-center -mt-20">
+    <div className="relative min-h-226.5 bg-cover bg-center -mt-20">
       <div className="absolute inset-0 bg-[url(/assets/10878ab9e650c4ad78302034fdebefa96e166933.jpg)] bg-cover bg-center scale-x-[-1]" />
       <div className="absolute inset-0 bg-black/50" />
             
       <div className="relative max-w-330 mx-auto px-5 pt-24">
         <h1
           className="font-bold text-white leading-[120%]
-          text-3xl sm:text-4xl md:text-5xl lg:text-[64px] mt-10"
+          text-3xl sm:text-4xl md:text-5xl lg:text-[64px] mt-3 sm:mt-40"
         >
           Sed tortor in quisque morbi
           <br />
@@ -53,7 +53,7 @@ const Hero = () => {
         </div>
 
         <div
-          className="mt-12 bg-[#2C49FEBD] lg:rounded-full rounded-2xl p-4 px-10 lg:max-w-210 max-w-80
+          className="mt-9 sm:mt-22 bg-[#2C49FEBD] lg:rounded-full rounded-2xl p-4 px-10 lg:max-w-210 max-w-80
           flex flex-col lg:flex-row items-center gap-6"
         >
           <div className="flex items-center gap-8">
