@@ -6,7 +6,7 @@ const Second = () => {
   return (
     <div className="
       bg-white flex justify-center m-auto items-center gap-10 mt-35
-      flex-col lg:flex-row px-5
+      flex-col xl:flex-row px-5
     ">
       <div
         onClick={() => {
@@ -26,7 +26,7 @@ const Second = () => {
       </div>
 
       <div className="items-center text-center lg:text-left">
-        <div className="flex justify-center lg:justify-end max-w-40 mb-6">
+        <div className="flex justify-center items-center m-auto lg:m-0 lg:justify-end max-w-40 mb-6">
           <svg
             width="189"
             height="8"

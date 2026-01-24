@@ -15,8 +15,19 @@ const Hero = () => {
         >
           Sed tortor in quisque morbi
           <br />
-          <span className="flex justify-end max-w-196 w-full">
+          <span className="flex lg:justify-end mt-2 lg:max-w-196 max-w-130">
             <svg
+            className="sm:hidden block"
+            width="189"
+            height="8"
+            viewBox="0 0 189 8"
+            fill="none"
+          >
+            <rect x="1" width="188" height="8" fill="#01C8FF" />
+            <rect width="166" height="8" fill="#2C49FE" />
+          </svg>
+            <svg
+              className="sm:block hidden"
               width="410"
               height="8"
               viewBox="0 0 472 8"
