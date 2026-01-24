@@ -6,7 +6,7 @@ const Second = () => {
   return (
     <div className="
       bg-white flex justify-center m-auto items-center gap-10 mt-35
-      flex-col xl:flex-row px-5
+      flex-col xl:flex-row px-5 mb-20
     ">
       <div
         onClick={() => {
