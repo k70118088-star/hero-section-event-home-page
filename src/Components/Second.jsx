@@ -10,8 +10,8 @@ const Second = () => {
       flex-col xl:flex-row px-5 mb-20
     ">
       <Video />
-      <div className="items-center text-center lg:text-left">
-        <div className="flex justify-center items-center m-auto lg:m lg:justify-end max-w-40 mb-6">
+      <div className="items-center flex flex-col text-center lg:text-left">
+        <div className="flex justify-center items-start  lg:justify-start max-w-40 mb-6">
           <svg
             width="189"
             height="8"
