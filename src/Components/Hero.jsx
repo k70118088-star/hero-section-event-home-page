@@ -4,7 +4,7 @@ import { Capicity, Date, Location } from "../../icons";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-226.5 bg-cover bg-center -mt-20">
+    <div className="relative min-h-226.5 bg-cover bg-center -mt-20 p-2 sm:p-10">
       <div className="absolute inset-0 bg-[url(/assets/10878ab9e650c4ad78302034fdebefa96e166933.jpg)] bg-cover bg-center scale-x-[-1]" />
       <div className="absolute inset-0 bg-black/50" />
             
@@ -64,7 +64,7 @@ const Hero = () => {
         </div>
 
         <div
-          className="mt-9 sm:mt-22 bg-[#2C49FEBD] lg:rounded-full rounded-2xl p-4 px-10 lg:max-w-210 max-w-80
+          className="mt-9 lg:mt-22    bg-[#2C49FEBD] lg:rounded-full rounded-2xl p-4 px-10 lg:max-w-210 max-w-80
           flex flex-col lg:flex-row items-center gap-6"
         >
           <div className="flex items-center gap-8">
