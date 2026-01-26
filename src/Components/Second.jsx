@@ -1,6 +1,7 @@
 import React from "react";
 import Box from "./Box";
 import { Help, Info, Sharing } from "../../icons";
+import Video from "./Video";
 
 const Second = () => {
   return (
@@ -8,23 +9,7 @@ const Second = () => {
       bg-white flex justify-center m-auto items-center gap-10 mt-35
       flex-col xl:flex-row px-5 mb-20
     ">
-      <div
-        onClick={() => {
-          window.location.href =
-            "https://www.youtube.com/embed/BRW2qLi9YDM?si=2K6thfytiATK3-4v";
-        }}
-      >
-        <img
-          src="/assets/Group17.png"
-          alt=""
-          className="
-            w-156 h-auto h-119.25
-            max-w-full 
-            sm:w-105 md:w-130 lg:w-156
-          "
-        />
-      </div>
-
+      <Video />
       <div className="items-center text-center lg:text-left">
         <div className="flex justify-center items-center m-auto lg:m lg:justify-end max-w-40 mb-6">
           <svg
