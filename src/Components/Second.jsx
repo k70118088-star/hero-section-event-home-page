@@ -59,7 +59,7 @@ const Second = () => {
               image={<Info />}
               title={"Info"}
               info="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in "
-              margin={"mt-9"}
+              margin={"sm:mt-9 mt-2.5"}
             />
           </div>
 
