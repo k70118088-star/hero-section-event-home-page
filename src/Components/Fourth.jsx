@@ -6,11 +6,11 @@ const Fourth = () => {
     <div
       className="
         flex justify-center items-center bg-white m-auto gap-7 mt-20
-        flex-col lg:flex-row px-5
+        flex-col lg:flex-row px-5 mb-5
       "
     >
-      <div className="text-center lg:text-left">
-        <div className="max-w-40 mb-4 mx-auto lg:mx-0">
+      <div className=" lg:text-left">
+        <div className="max-w-40 mb-4 lg:mx-0">
           <svg width="189" height="8" viewBox="0 0 189 8" fill="none">
             <rect x="1" width="188" height="8" fill="#01C8FF" />
             <rect width="166" height="8" fill="#2C49FE" />
