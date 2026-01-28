@@ -28,6 +28,9 @@ const Form = () => {
     if (!formData.password) newErrors.password = "Password required";
     if (!formData.confirmPassword)
       newErrors.confirmPassword = "Confirm password required";
+    if(formData.password !== formData.confirmPassword){
+      newErrors.confirmPassword ="confirm password must be same as password"
+    }
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
