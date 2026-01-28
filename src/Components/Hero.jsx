@@ -64,8 +64,8 @@ const Hero = () => {
         </div>
 
         <div
-          className="mt-9 lg:mt-22    bg-[#2C49FEBD] lg:rounded-full rounded-2xl p-4 px-10 lg:max-w-210 max-w-80
-          flex flex-col lg:flex-row items-center gap-6"
+          className="mt-9 lg:mt-22    bg-[#2C49FEBD] lg:rounded-full rounded-2xl p-4 px-10 lg:max-w-230 max-w-80
+          flex flex-col lg:flex-row items-center gap-8"
         >
           <div className="flex items-center gap-8">
             <Location />
@@ -102,7 +102,7 @@ const Hero = () => {
             rounded="rounded-full"
             font="font-bold"
             textSize="text-lg"
-            margin="ml-4"
+            margin="ml-6"
           />
         </div>
       </div>
