@@ -1,25 +1,18 @@
-import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
-import Second from "./Components/Second";
-import Third from "./Components/Third";
-import Fourth from "./Components/Fourth";
-import Fifth from "./Components/Fifth";
-import Footer from "./Components/Footer";
-
-
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Events from "./pages/Events";
+import Feed from "./pages/Feed";
 
 function App() {
   return (
-    <>
-    <Navbar className={"bg-black/60"}/>
-    <Hero />
-    <Second />
-    <Third />
-    <Fourth />
-    <Fifth />
-    <Footer />
-     </>
+   
+      <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/events" element={<Events />} />
+       <Route path="/feed" element={<Feed />} />
+      </Routes>
+   
   );
-};
+}
 
 export default App;
