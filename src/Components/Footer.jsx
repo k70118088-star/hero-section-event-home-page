@@ -21,9 +21,9 @@ const Footer = () => {
           </p>
 
           <div className="flex gap-4">
-            <Insta />
-            <Facebook />
-            <Twitter />
+             <a href=""><Insta /></a>
+             <a href=""><Facebook /></a>
+             <a href=""><Twitter /></a>
           </div>
         </div>
 
