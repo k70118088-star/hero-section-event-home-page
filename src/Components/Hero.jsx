@@ -64,10 +64,10 @@ const Hero = () => {
         </div>
 
         <div
-          className="mt-9 lg:mt-22    bg-[#2C49FEBD] lg:rounded-full rounded-2xl p-4 px-10 lg:max-w-230 max-w-80
+          className="mt-9 lg:mt-22    bg-[#2C49FEBD] lg:rounded-full rounded-2xl p-4 px-10 lg:max-w-225 max-w-80
           flex flex-col lg:flex-row items-center gap-8"
         >
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-5">
             <Location />
             <div>
               <h1 className="text-white font-medium">Location</h1>
@@ -76,7 +76,7 @@ const Hero = () => {
           </div>
 
           <Divider />
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-5">
             <Date />
             <div>
               <h1 className="text-white font-medium">Date</h1>
@@ -85,7 +85,7 @@ const Hero = () => {
           </div>
 
           <Divider />
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-5">
             <Capicity />
             <div>
               <h1 className="text-white font-medium">Capacity</h1>
@@ -102,7 +102,7 @@ const Hero = () => {
             rounded="rounded-full"
             font="font-bold"
             textSize="text-lg"
-            margin="ml-6"
+            margin="ml-7"
           />
         </div>
       </div>

@@ -148,7 +148,7 @@ const Form = () => {
             text="Sign up"
             textColor="text-white"
             bgColor="bg-[#2C49FE]"
-            padding="px-25 sm:px-64 py-3"
+            padding="px-25 sm:px-63 py-3"
             rounded="rounded-full"
             font="font-normal"
             textSize="text-lg"
