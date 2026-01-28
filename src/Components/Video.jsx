@@ -11,7 +11,7 @@ const Video = () => {
           alt="Play video"
           onClick={() => setPlay(true)}
           className="
-            w-156 h-auto
+             sm:h-90 md:h-120 h-60
             max-w-full 
             sm:w-105 md:w-130 lg:w-156
           "
@@ -19,7 +19,7 @@ const Video = () => {
       ) : (
         <iframe
           className="
-            w-156 h-119.25
+            w-156 sm:h-90 md:h-120 h-60
             max-w-full
             sm:w-105 md:w-130 lg:w-156
           "
