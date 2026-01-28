@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Button from "./Button";
 
-const Navbar = () => {
+const Navbar = ({className}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     
-    <header className="sticky top-0 z-50 bg-black/60 ">
+    <header className={`sticky top-0 z-50  ${className} `}>
       <div className="flex justify-between items-center max-w-330 mx-auto p-5   ">
         
         

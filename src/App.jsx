@@ -11,7 +11,7 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <>
-    <Navbar />
+    <Navbar className={"bg-black/60"}/>
     <Hero />
     <Second />
     <Third />

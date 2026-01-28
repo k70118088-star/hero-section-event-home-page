@@ -27,26 +27,27 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-15">
-
+        <div className="md:flex md:flex-row grid grid-flow-col grid-rows-2  gap-15">
+           <div className="flex gap-15">
           <div>
             <h3 className="font-bold text-sm mb-4">SERVICES</h3>
             <ul className="space-y-2 text-[12px] font-normal">
-              <li>About</li>
-              <li>News</li>
-              <li>Ullamcorper</li>
-              <li>Contact</li>
+              <li><a href="">About</a></li>
+              <li><a href="">News</a></li>
+              <li><a href="">Ullamcorper</a></li>
+              <li><a href="">Contact</a></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-bold text-sm mb-4">EVENTS</h3>
             <ul className="space-y-3 text-[12px] font-normal ">
-              <li>Ullamcorper</li>
-              <li>Ullamcorper</li>
-              <li>Ullamcorper</li>
-              <li>Ullamcorper</li>
+              <li><a href="">Ullamcorper</a></li>
+              <li><a href="">Ullamcorper</a></li>
+              <li><a href="">Ullamcorper</a></li>
+              <li><a href="">Ullamcorper</a></li>
             </ul>
+          </div>
           </div>
 
           <div>
