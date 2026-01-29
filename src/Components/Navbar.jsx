@@ -16,7 +16,7 @@ const Navbar = ({ className }) => {
         </div>
 
         <div className="hidden md:flex gap-10 items-center">
-          <Link to="/">
+          <Link to="/" >
             <li className="font-normal text-[16px]  hover:font-semibold list-none">
               HOME
             </li>
@@ -47,7 +47,7 @@ const Navbar = ({ className }) => {
         </div>
 
         <button
-          className="md:hidden text-white text-3xl z-60"
+          className="md:hidden text-3xl z-60"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? "✕" : "☰"}
@@ -68,22 +68,22 @@ const Navbar = ({ className }) => {
       >
         <div className="mt-16 flex flex-col  gap-6">
           <Link to="/">
-            <li className="font-normal text-[16px]  hover:font-semibold list-none">
+            <li className="font-normal text-[16px] text-white  hover:font-semibold list-none">
               HOME
             </li>
           </Link>
           <Link to="/events">
-            <li className="font-normal text-[16px]  hover:font-semibold list-none">
+            <li className="font-normal text-[16px] text-white  hover:font-semibold list-none">
               EVENTS
             </li>
           </Link>
           <Link to="/feed">
-            <li className="font-normal text-[16px]  hover:font-semibold list-none">
+            <li className="font-normal text-[16px] text-white hover:font-semibold list-none">
               FEED
             </li>
           </Link>
           <Link to="/username">
-            <li className="font-normal text-[16px]  hover:font-semibold list-none">
+            <li className="font-normal text-[16px] text-white hover:font-semibold list-none">
               USER NAME
             </li>
           </Link>

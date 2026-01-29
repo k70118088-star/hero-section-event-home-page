@@ -64,7 +64,7 @@ const Hero = () => {
         </div>
 
         <div
-          className="mt-9 lg:mt-22    bg-[#2C49FEBD] lg:rounded-full rounded-2xl p-4 px-10 lg:max-w-225 max-w-80
+          className="mt-9 lg:mt-22    bg-[#2C49FEBD] lg:rounded-full rounded-2xl p-4 px-10 lg:max-w-221.5 max-w-80
           flex flex-col lg:flex-row items-center gap-8"
         >
           <div className="flex items-center gap-5">
@@ -77,7 +77,7 @@ const Hero = () => {
 
           <Divider />
           <div className="flex items-center gap-5">
-            <Date />
+            <Date  />
             <div>
               <h1 className="text-white font-medium">Date</h1>
               <p className="text-white/60 text-sm">09/23/2021</p>
