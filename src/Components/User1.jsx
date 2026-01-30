@@ -5,11 +5,11 @@ import { Coma, Guitar, Ticket } from "../../icons";
 
 const User1 = () => {
   return (
-    <div className="max-w-330 mx-auto px-4 mt-12 space-y-16">
+    <div className="max-w-330 mx-auto px-4 mt-12 space-y-16 mb-20">
      
       <div className="flex flex-col lg:flex-row gap-8 items-start">
         
-        <div className="w-full lg:w-100 rounded-[30px] overflow-hidden">
+        <div className="w-full min-[500px]:w-100 sm:w-100 md:w-100 lg:w-100 rounded-[30px] overflow-hidden">
           <img
             src="/assets/Rectangle74.png"
             alt=""
@@ -45,7 +45,7 @@ const User1 = () => {
                 text="Show Journey of Feed"
                 bgColor="bg-[#2C49FE]"
                 textColor="text-white"
-                padding="px-5 py-2"
+                padding="px-7 py-2"
                 rounded="rounded-full"
                 font="font-semibold"
               />
@@ -171,7 +171,7 @@ const User1 = () => {
           </p>
         </div>
 
-        <div className="relative w-full lg:w-105 max-h-103.75">
+        <div className="relative w-full sm:w-120 md:w-130 lg:w-105 max-h-103.75">
           <img
             src="/assets/Rectangle92.png"
             alt=""

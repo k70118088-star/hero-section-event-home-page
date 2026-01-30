@@ -40,11 +40,7 @@ function App() {
   ]);
   return (
     <RouterProvider router={router} />
-    // <Routes>
-    // <Route path="/" element={<Home />} />
-    //  <Route path="/feed" element={<Feed />} />
-    //  <Route path="/username" element={<Username />} />
-    // </Routes>
+    
   );
 }
 
