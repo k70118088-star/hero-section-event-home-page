@@ -127,7 +127,7 @@ const Comment = () => {
                 <h4 className="font-semibold text-xs sm:text-sm mb-1">
                   Username
                 </h4>
-                <p className="text-xs sm:text-sm text-gray-600 leading-[150%]">
+                <p className="text-xs max-w-286 break-all sm:text-sm text-gray-600 leading-[150%]">
                   {item.text}
                 </p>
               </div>
