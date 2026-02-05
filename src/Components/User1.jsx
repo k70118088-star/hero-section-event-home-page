@@ -2,13 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
 import { Coma, Guitar, Ticket } from "../../icons";
+import { useState } from "react";
 
 const User1 = () => {
+  const [play, setPlay] = useState(false);
+
   return (
     <div className="max-w-330 mx-auto px-4 mt-12 space-y-16 mb-20">
-     
       <div className="flex flex-col lg:flex-row gap-8 items-start">
-        
         <div className="w-full min-[500px]:w-100 sm:w-100 md:w-100 lg:w-100 rounded-[30px] overflow-hidden">
           <img
             src="/assets/Rectangle74.png"
@@ -18,7 +19,6 @@ const User1 = () => {
         </div>
 
         <div className="flex-1">
-       
           <div className="flex items-center gap-2 text-sm text-black/60">
             <Link to="/" className="hover:text-[#2c49fe] hover:underline">
               HOME
@@ -171,17 +171,47 @@ const User1 = () => {
           </p>
         </div>
 
-        <div className="relative w-full sm:w-120 md:w-130 lg:w-105 max-h-103.75">
-          <img
-            src="/assets/Rectangle92.png"
-            alt=""
-            className="w-full h-auto rounded-xl"
-          />
-          <img
-            src="/assets/videoicon.png"
-            alt=""
-            className="absolute inset-0 m-auto w-14 h-14"
-          />
+        <div className="relative w-full sm:w-120 md:w-130 lg:w-154 max-h-103.75">
+          <div className="cursor-pointer relative inline-block">
+            {!play ? (
+              <>
+                <img
+                  src="/assets/63da9c2da58c29d373779b98180f46ec2886772b.jpg"
+                  alt="Play video"
+                  onClick={() => setPlay(true)}
+                  className="w-full sm:w-120 md:w-130 lg:w-154 rounded-[30px]"
+                />
+
+                <img
+                  src="/assets/videoicon.png"
+                  alt="Play"
+                  onClick={() => setPlay(true)}
+                  className="
+          absolute
+          top-1/2 left-1/2
+          -translate-x-1/2 -translate-y-1/2
+          w-14 h-14
+          sm:w-16 sm:h-16
+          cursor-pointer
+        "
+                />
+              </>
+            ) : (
+              <iframe
+                className="
+        w-156 sm:h-90 md:h-120 h-60
+        max-w-full
+        sm:w-105 md:w-130 lg:w-156
+        rounded-[30px]
+      "
+                src="https://www.youtube.com/embed/BRW2qLi9YDM?autoplay=1&mute=1"
+                title="YouTube video"
+                frameBorder="0"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+              />
+            )}
+          </div>
         </div>
       </div>
     </div>
