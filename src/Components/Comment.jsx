@@ -55,7 +55,10 @@ const Comment = () => {
 
         <h1 className="font-semibold text-3xl sm:text-5xl mt-4">Tell Us!</h1>
         <p className="text-gray-500 max-w-3xl mx-auto mt-3 sm:mt-4 text-sm sm:text-base">
-         Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.
+          Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla.
+          Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam
+          cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut
+          vitae dolor fringilla urna eget aliquet.
         </p>
       </div>
 
