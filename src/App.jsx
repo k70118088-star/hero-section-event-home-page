@@ -21,14 +21,14 @@ function App() {
     //     </>
     //   ),
     // },
-    // {
-    //   path: "/",
-    //   element: (
-    //     <>
-    //       <Home />
-    //     </>
-    //   ),
-    // },
+    {
+      path: "/feed",
+      element: (
+        <>
+          <Feed />
+        </>
+      ),
+    },
     {
       path: "/username",
       element: (

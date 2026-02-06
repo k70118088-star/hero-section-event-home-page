@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
-import Hero from "../Components/Hero";
-import Second from "../Components/Second";
-import Third from "../Components/Third";
-import Fourth from "../Components/Fourth";
-import Fifth from "../Components/Fifth";
-import Footer from "../Components/Footer";
+import Navbar from "../Components/Common/Navbar";
+import Hero from "../Components/Pagehome/Hero";
+import Second from "../Components/Pagehome/Second";
+import Third from "../Components/Pagehome/Third";
+import Fourth from "../Components/Pagehome/Fourth";
+import Fifth from "../Components/Pagehome/Fifth";
+import Footer from "../Components/Common/Footer";
 
 const Home = () => {
   return (
@@ -13,7 +13,7 @@ const Home = () => {
       <Navbar className={"bg-black/60 text-white"} />
       <Hero />
       <Second />
-       <Third />
+      <Third />
       <Fourth />
       <Fifth />
       <Footer />

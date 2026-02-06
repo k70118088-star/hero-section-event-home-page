@@ -16,7 +16,7 @@ const Navbar = ({ className }) => {
         </div>
 
         <div className="hidden md:flex gap-10 items-center">
-          <Link to="/" >
+          <Link to="/">
             <li className="font-normal text-[16px]  hover:font-semibold list-none">
               HOME
             </li>

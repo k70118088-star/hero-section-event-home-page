@@ -1,7 +1,7 @@
 import React from "react";
-import Box from "./Box";
+import Box from "../Box";
 import { Help, Info, Sharing } from "../../icons";
-import Video from "./Video";
+import Video from "../Video";
 
 const Second = () => {
   return (

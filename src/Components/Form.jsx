@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Input from "./Input";
-import Button from "./Button";
+import Button from "./Common/Button";
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -23,13 +23,12 @@ const Form = () => {
     if (!formData.firstName) newErrors.firstName = "First name is required";
     if (!formData.lastName) newErrors.lastName = "Last name is required";
     if (!formData.email) newErrors.email = "Email is required";
-    else if (!isValidEmail(formData.email))
-      newErrors.email = "Invalid email";
+    else if (!isValidEmail(formData.email)) newErrors.email = "Invalid email";
     if (!formData.password) newErrors.password = "Password required";
     if (!formData.confirmPassword)
       newErrors.confirmPassword = "Confirm password required";
-    if(formData.password !== formData.confirmPassword){
-      newErrors.confirmPassword ="confirm password must be same as password"
+    if (formData.password !== formData.confirmPassword) {
+      newErrors.confirmPassword = "confirm password must be same as password";
     }
 
     setErrors(newErrors);
@@ -49,7 +48,6 @@ const Form = () => {
   return (
     <form onSubmit={handleSubmit} className="max-w-xl mx-auto">
       <div className="grid grid-cols-2 gap-4">
-
         <div>
           <Input
             type="text"
@@ -57,9 +55,7 @@ const Form = () => {
             placeholder="First Name"
             value={formData.firstName}
             onChange={handleChange}
-            className={`w-full ${
-              errors.firstName && "border-red-500"
-            }`}
+            className={`w-full ${errors.firstName && "border-red-500"}`}
           />
           {errors.firstName && (
             <p className="text-red-500 text-sm">{errors.firstName}</p>
@@ -73,9 +69,7 @@ const Form = () => {
             placeholder="Last Name"
             value={formData.lastName}
             onChange={handleChange}
-            className={`w-full ${
-              errors.lastName && "border-red-500"
-            }`}
+            className={`w-full ${errors.lastName && "border-red-500"}`}
           />
           {errors.lastName && (
             <p className="text-red-500 text-sm">{errors.lastName}</p>
@@ -89,9 +83,7 @@ const Form = () => {
             placeholder="Email Address"
             value={formData.email}
             onChange={handleChange}
-            className={`w-full ${
-              errors.email && "border-red-500"
-            }`}
+            className={`w-full ${errors.email && "border-red-500"}`}
           />
           {errors.email && (
             <p className="text-red-500 text-sm">{errors.email}</p>
@@ -105,9 +97,7 @@ const Form = () => {
             placeholder="Password"
             value={formData.password}
             onChange={handleChange}
-            className={`w-full ${
-              errors.password && "border-red-500"
-            }`}
+            className={`w-full ${errors.password && "border-red-500"}`}
           />
           {errors.password && (
             <p className="text-red-500 text-sm">{errors.password}</p>
@@ -121,14 +111,10 @@ const Form = () => {
             placeholder="Confirm Password"
             value={formData.confirmPassword}
             onChange={handleChange}
-            className={`w-full ${
-              errors.confirmPassword && "border-red-500"
-            }`}
+            className={`w-full ${errors.confirmPassword && "border-red-500"}`}
           />
           {errors.confirmPassword && (
-            <p className="text-red-500 text-sm">
-              {errors.confirmPassword}
-            </p>
+            <p className="text-red-500 text-sm">{errors.confirmPassword}</p>
           )}
         </div>
 
@@ -152,13 +138,11 @@ const Form = () => {
             rounded="rounded-full"
             font="font-normal"
             textSize="text-lg"
-             />
+          />
         </div>
-
       </div>
     </form>
   );
 };
 
 export default Form;
-

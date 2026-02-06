@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import Button from "../Common/Button";
 import { Capicity, Date, Location } from "../../icons";
 
 const Hero = () => {
@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="relative min-h-226.5 bg-cover bg-center -mt-20 p-2 sm:p-10">
       <div className="absolute inset-0 bg-[url(/assets/10878ab9e650c4ad78302034fdebefa96e166933.jpg)] bg-cover bg-center scale-x-[-1]" />
       <div className="absolute inset-0 bg-black/50" />
-            
+
       <div className="relative max-w-330 mx-auto px-5 pt-24">
         <h1
           className="font-bold text-white leading-[120%]
@@ -17,15 +17,15 @@ const Hero = () => {
           <br />
           <span className="flex lg:justify-end mt-2 lg:max-w-196 max-w-130">
             <svg
-            className="sm:hidden block"
-            width="189"
-            height="8"
-            viewBox="0 0 189 8"
-            fill="none"
-          >
-            <rect x="1" width="188" height="8" fill="#01C8FF" />
-            <rect width="166" height="8" fill="#2C49FE" />
-          </svg>
+              className="sm:hidden block"
+              width="189"
+              height="8"
+              viewBox="0 0 189 8"
+              fill="none"
+            >
+              <rect x="1" width="188" height="8" fill="#01C8FF" />
+              <rect width="166" height="8" fill="#2C49FE" />
+            </svg>
             <svg
               className="sm:block hidden"
               width="410"
@@ -77,7 +77,7 @@ const Hero = () => {
 
           <Divider />
           <div className="flex items-center gap-5">
-            <Date  />
+            <Date />
             <div>
               <h1 className="text-white font-medium">Date</h1>
               <p className="text-white/60 text-sm">09/23/2021</p>
