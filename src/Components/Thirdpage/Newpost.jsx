@@ -16,12 +16,14 @@ const Newpost = () => {
           <rect width="166" height="8" fill="#2C49FE" />
         </svg>
         <h1 className="font-semibold text-5xl leading-[150%]">New Posts</h1>
+        <div className="flex flex-col gap-10">
         <Post />
         <Post />
         <Post />
         <Post />
         <Post />
         <Post />
+        </div>
       </div>
     </div>
   );
