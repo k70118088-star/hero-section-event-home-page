@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Profile = () => {
   return (
-    <div className="flex justify-center items-center mt-17 ">
+    <div className="flex justify-center items-center mt-17 p-3">
       <div className="flex flex-col justify-center min-[900px]:flex-row gap-8 items-center w-full max-w-350">
 
         <div className="w-full sm:w-100 lg:w-100 rounded-[30px] overflow-hidden">

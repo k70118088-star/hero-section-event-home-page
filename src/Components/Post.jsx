@@ -1,19 +1,25 @@
 import React, { useState } from "react";
-import { Date } from "../icons";
+import { Date, Heart, Remove } from "../icons";
 
 const Post = () => {
   const [likes, setLikes] = useState(10);
   const [isLiked, setIsLiked] = useState(false);
   const [showComments, setShowComments] = useState(false);
-
   const [commentText, setCommentText] = useState("");
+
   const [comments, setComments] = useState([
     {
       id: 1,
       text: "Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.",
     },
-    { id: 2, text: "Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla." },
-    {id: 3, text: "Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet."},
+    {
+      id: 2,
+      text: "Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla.",
+    },
+    {
+      id: 3,
+      text: "Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.",
+    },
   ]);
 
   const handleLike = () => {
@@ -23,12 +29,10 @@ const Post = () => {
 
   const handleAddComment = () => {
     if (!commentText.trim()) return;
-
     setComments((prev) => [
       { id: crypto.randomUUID(), text: commentText },
       ...prev,
     ]);
-
     setCommentText("");
   };
 
@@ -37,42 +41,46 @@ const Post = () => {
   };
 
   return (
-    <div className="mt-5 flex justify-center">
-      <div className="w-full max-w-7xl">
-        <div className="p-8.5 rounded-[30px] shadow-[0px_8px_35px_0px_#0000001A]">
-          <div className="flex ">
-            <div className="flex-1 max-w-140.75">
-              <div className="flex gap-5">
+    <div className="mt-5 flex justify-center px-4 sm:px-6">
+      <div className="w-full max-w-325">
+        <div className="p-4 sm:p-6 lg:p-8.5 rounded-[30px] shadow-[0px_8px_35px_0px_#0000001A]">
+          {/* MAIN CONTENT */}
+          <div className="flex flex-col lg:flex-row gap-10">
+            {/* LEFT */}
+            <div className="flex-1 max-w-full lg:max-w-140.75">
+              <div className="flex items-center gap-5">
                 <img
                   src="/assets/5e8dfb1b961bd1cbad55d0901b2697837d03d6f1.png"
-                  className="w-20 h-20 rounded-full"
+                  className="w-14 h-14 sm:w-20 sm:h-20 rounded-full"
                 />
                 <div>
-                  <h1 className="font-semibold text-2xl">Username</h1>
-                  <p className="text-black/60">Post event name</p>
+                  <h1 className="font-semibold text-xl sm:text-2xl">
+                    Username
+                  </h1>
+                  <p className="text-black/60 text-sm sm:text-base">
+                    Post event name
+                  </p>
                 </div>
               </div>
 
-              <h3 className="font-semibold text-2xl mt-5 max-w-140">
+              <h3 className="font-semibold text-xl sm:text-2xl mt-5 max-w-full lg:max-w-140">
                 Fusce adipiscing nunc et tellus eu, tristique sodales sit
                 aliquet.
               </h3>
 
-              <p className="text-[#666] mt-4 flex items-center">
+              <p className="text-[#666] mt-4 flex items-center gap-2 text-sm sm:text-base">
                 <Date /> 10/02/2022
               </p>
 
-              <p className="mt-5 text-black/60 max-w-138.25">
+              <p className="mt-5 text-black/60 max-w-full lg:max-w-138.25 text-sm sm:text-base">
                 Dictumst vulputate eget quisque iaculis hendrerit quis ut
                 fringilla. Senectus gravida sed interdum pretium at quam morbi.
-                Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate
-                in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.
+                Nunc, libero nam cursus sem faucibus urna.
               </p>
 
-              <p className="mt-5 text-black/60 max-w-138.25">
+              <p className="mt-5 text-black/60 max-w-full lg:max-w-138.25 text-sm sm:text-base">
                 Sed interdum pretium at quam morbi. Nunc, libero nam cursus sem
-                faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae
-                dolor fringilla urna eget aliquet.
+                faucibus urna.
               </p>
 
               <div className="mt-8 flex gap-10">
@@ -82,21 +90,7 @@ const Post = () => {
                     isLiked ? "text-red-500" : "text-black/60"
                   }`}
                 >
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7.5 4C4.4625 4 2 6.4625 2 9.5C2 15 8.5 20 12 21.163C15.5 20 22 15 22 9.5C22 6.4625 19.5375 4 16.5 4C14.64 4 12.995 4.9235 12 6.337C11.4928 5.6146 10.8191 5.02505 10.0358 4.61824C9.25245 4.21144 8.38265 3.99938 7.5 4Z"
-                      stroke="black"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                  <Heart />
                   <span>{likes}</span>
                 </button>
 
@@ -124,35 +118,48 @@ const Post = () => {
                       </clipPath>
                     </defs>
                   </svg>
+
                   <span>{comments.length}</span>
                 </button>
               </div>
             </div>
 
-            <div className="grid grid-cols-2 grid-rows-2 gap-7">
+            <div className="grid grid-cols-2 relative gap-5 max-w-[632px]">
               <img
-                src="/assets/63da9c2da58c29d373779b98180f46ec2886772b.jpg"
-                className="rounded-[20px] w-75.5 h-57.75"
+                src="/assets/Rectangle82.png"
+                className="  object-cover rounded-lg"
+                alt=""
               />
               <img
-                src="/assets/8bf899af954eeaa0bf1bd537be64cc80b3135689.jpg"
-                className="rounded-[20px] w-75.5 h-48.75"
+                src="/assets/Rectangle83.png"
+                className="object-cover  rounded-lg"
+                alt=""
               />
               <img
-                src="/assets/787b16ca4f8632bb760602bb17fc6addf06f3b02.jpg"
-                className="rounded-[20px] mt-3 w-75.5 h-49.75"
+                src="/assets/Rectangle84.png"
+                className="  object-cover  rounded-lg"
+                alt=""
               />
               <img
-                src="/assets/47de758f93ff7f1b99bd8b00aabab8692c26e0aa.jpg"
-                className="rounded-[20px] -mt-6 w-75.5 h-59"
+                src="/assets/Rectangle85.png"
+                className="-mt-5 md:-mt-7 lg:-mt-9 object-cover  rounded-lg"
+                alt=""
               />
+              <div className="flex flex-col items-center justify-center absolute bottom-6 md:bottom-8 lg:bottom-12 py-2 md:py-3 lg:py-4 px-4 md:px-5 lg:px-7 right-2 md:right-3 lg:right-4 rounded-[15px] md:rounded-[18px] lg:rounded-[20px] bg-white">
+                <h1 className="text-[24px] md:text-[30px] lg:text-[36px] font-semibold opacity-60">
+                  +15
+                </h1>
+                <p className="font-normal text-[12px] md:text-[14px] lg:text-[16px] opacity-60">
+                  more
+                </p>
+              </div>
             </div>
           </div>
 
           {showComments && (
             <div className="mt-12">
-              <div className="bg-white border border-[#9CA1BE] rounded-full p-3 mb-8">
-                <div className="flex items-center gap-4">
+              <div className="bg-white border border-[#9CA1BE] md:rounded-full rounded-[5px] p-3 mb-8">
+                <div className="flex flex-col sm:flex-row items-center gap-4">
                   <img
                     src="/assets/5e8dfb1b961bd1cbad55d0901b2697837d03d6f1.png"
                     className="w-10 h-10 rounded-full"
@@ -161,17 +168,11 @@ const Post = () => {
                     value={commentText}
                     onChange={(e) => setCommentText(e.target.value)}
                     placeholder="Add new comment"
-                    className="flex-1 outline-none text-sm"
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter") {
-                        handleAddComment();
-                      }
-                    }}
+                    className="flex-1 outline-none text-sm w-full"
                   />
                   <button
-                    type="button"
                     onClick={handleAddComment}
-                    className="bg-[#2C49FE] text-white px-6 py-2 rounded-full text-sm"
+                    className="bg-[#2C49FE] text-white px-6 py-2 rounded-full text-sm w-full sm:w-auto"
                   >
                     Post Comment
                   </button>
@@ -185,20 +186,18 @@ const Post = () => {
                       src="/assets/5e8dfb1b961bd1cbad55d0901b2697837d03d6f1.png"
                       className="w-10 h-10 rounded-full"
                     />
-
                     <div>
-                      <div className="bg-[#F1F2F5] rounded-b-[20px] rounded-r-[20px] px-5 py-4 max-w-[1140px]">
+                      <div className="bg-[#F1F2F5] rounded-b-[20px] rounded-r-[20px] px-5 py-4 max-w-full">
                         <h4 className="font-semibold text-sm mb-1">Username</h4>
                         <p className="text-sm text-gray-600 break-words">
                           {item.text}
                         </p>
                       </div>
-
                       <button
                         onClick={() => handleRemoveComment(item.id)}
-                        className="text-xs text-gray-500 mt-2 ml-4 hover:text-red-500"
+                        className="text-xs flex items-center text-gray-500 mt-2 ml-4 hover:text-red-500"
                       >
-                        Remove Comment
+                        <Remove /> Remove Comment
                       </button>
                     </div>
                   </div>
