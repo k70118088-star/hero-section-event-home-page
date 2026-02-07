@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "./Common/Button";
+import Button from "../Common/Button";
 import { Remove } from "../../icons";
 
 const Comment = () => {
