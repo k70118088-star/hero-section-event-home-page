@@ -75,12 +75,14 @@ const Post = () => {
               <p className="mt-5 text-black/60 max-w-full lg:max-w-138.25 text-sm sm:text-base">
                 Dictumst vulputate eget quisque iaculis hendrerit quis ut
                 fringilla. Senectus gravida sed interdum pretium at quam morbi.
-                Nunc, libero nam cursus sem faucibus urna.
+                Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate
+                in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.
               </p>
 
               <p className="mt-5 text-black/60 max-w-full lg:max-w-138.25 text-sm sm:text-base">
                 Sed interdum pretium at quam morbi. Nunc, libero nam cursus sem
-                faucibus urna.
+                faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae
+                dolor fringilla urna eget aliquet.
               </p>
 
               <div className="mt-8 flex gap-10">
