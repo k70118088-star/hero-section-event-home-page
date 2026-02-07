@@ -126,7 +126,7 @@ const Post = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 relative gap-5 max-w-[632px]">
+            <div className="grid grid-cols-2 relative gap-5 max-w-158">
               <img
                 src="/assets/Rectangle82.png"
                 className="  object-cover rounded-lg"
@@ -191,7 +191,7 @@ const Post = () => {
                     <div>
                       <div className="bg-[#F1F2F5] rounded-b-[20px] rounded-r-[20px] px-5 py-4 max-w-full">
                         <h4 className="font-semibold text-sm mb-1">Username</h4>
-                        <p className="text-sm text-gray-600 break-words">
+                        <p className="text-sm text-gray-600 wrap-break-word">
                           {item.text}
                         </p>
                       </div>

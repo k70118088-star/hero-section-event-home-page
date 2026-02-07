@@ -2,6 +2,7 @@ import Home from "./pages/Home";
 import Feed from "./pages/Feed";
 import Username from "./pages/Username";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Events from "./pages/Events";
 
 function App() {
   const router = createBrowserRouter([
@@ -13,14 +14,14 @@ function App() {
         </>
       ),
     },
-    // {
-    //   path: "/events",
-    //   element: (
-    //     <>
-         
-    //     </>
-    //   ),
-    // },
+    {
+      path: "/events",
+      element: (
+        <>
+         <Events />
+        </>
+      ),
+    },
     {
       path: "/feed",
       element: (
