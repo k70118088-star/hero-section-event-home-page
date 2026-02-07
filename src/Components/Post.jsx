@@ -44,9 +44,9 @@ const Post = () => {
     <div className="mt-5 flex justify-center px-4 sm:px-6">
       <div className="w-full max-w-325">
         <div className="p-4 sm:p-6 lg:p-8.5 rounded-[30px] shadow-[0px_8px_35px_0px_#0000001A]">
-          {/* MAIN CONTENT */}
+         
           <div className="flex flex-col lg:flex-row gap-10">
-            {/* LEFT */}
+           
             <div className="flex-1 max-w-full lg:max-w-140.75">
               <div className="flex items-center gap-5">
                 <img
