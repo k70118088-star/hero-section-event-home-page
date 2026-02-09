@@ -6,9 +6,9 @@ const Eventbg = () => {
   return (
     <div className='flex justify-center items-center'>
        
-        <div className="absolute inset-0 bg-[url(/assets/Rectangle56.png)] bg-no-repeat h-[372px]  max-w-[2000px] " />
-      <div className="absolute inset-0 bg-black/50 h-[372px]  max-w-[2000px]" />
-      <div className=' z-1 w-full max-w-320 text-white mt-32'>
+        <div className="absolute inset-0 bg-[url(/assets/e17367a742c4a1c61951756ea6f76d0309c431af.jpg)] bg-no-repeat bg-center h-93 max-w-500 " />
+      <div className="absolute inset-0 bg-black/50 h-93  max-w-500" />
+      <div className=' z-1 w-full max-w-7xl text-white mt-32 p-3'>
         <div className="flex items-start justify-flex-start gap-2 text-base font-normal ">
             <Link to="/" className="hover:text-[#2c49fe] hover:underline">
               HOME

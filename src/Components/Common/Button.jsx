@@ -10,13 +10,14 @@ const Button = ({
   rounded,
   textSize,
   margin,
-  onClick
+  onClick,
+  width
 }) => {
   return (
     <button
       type={type}
       onClick={onClick}
-      className={`cursor-pointer hover:bg-[#1e38d8] hover:text-white  ${font} ${bgColor} ${textColor} ${padding} ${rounded} ${textSize} ${margin}`}
+      className={`cursor-pointer hover:bg-[#1e38d8] hover:text-white ${width} ${font} ${bgColor} ${textColor} ${padding} ${rounded} ${textSize} ${margin}`}
     >
       {text}
     </button>
