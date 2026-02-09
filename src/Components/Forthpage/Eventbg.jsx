@@ -22,4 +22,4 @@ const Eventbg = () => {
   )
 }
 
-export default Eventbg
+export default Eventbg;
