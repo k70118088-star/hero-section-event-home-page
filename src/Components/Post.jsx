@@ -170,7 +170,7 @@ const Post = () => {
                     value={commentText}
                     onChange={(e) => setCommentText(e.target.value)}
                     placeholder="Add new comment"
-                    className="flex-1 outline-none text-sm w-full"
+                    className="flex-1 outline-none flex-wrap text-sm"
                   />
                   <button
                     onClick={handleAddComment}
@@ -191,7 +191,7 @@ const Post = () => {
                     <div>
                       <div className="bg-[#F1F2F5] rounded-b-[20px] rounded-r-[20px] px-5 py-4 max-w-full">
                         <h4 className="font-semibold text-sm mb-1">Username</h4>
-                        <p className="text-sm text-gray-600 wrap-break-word">
+                        <p className="text-sm text-gray-600 wrap-break-word break-all">
                           {item.text}
                         </p>
                       </div>
