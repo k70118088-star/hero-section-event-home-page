@@ -2,6 +2,7 @@ import React from "react";
 
 const Button = ({
   type = "button",
+  id,
   text,
   bgColor,
   textColor,
@@ -15,6 +16,7 @@ const Button = ({
 }) => {
   return (
     <button
+    id={id}
       type={type}
       onClick={onClick}
       className={`cursor-pointer hover:bg-[#1e38d8] hover:text-white ${width} ${font} ${bgColor} ${textColor} ${padding} ${rounded} ${textSize} ${margin}`}

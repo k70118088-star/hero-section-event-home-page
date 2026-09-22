@@ -130,6 +130,7 @@ const Form = () => {
 
         <div className="col-span-2">
           <Button
+          id="signup-form"
             type="submit"
             text="Sign up"
             textColor="text-white"
